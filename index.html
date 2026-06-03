@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Globus inviterer til Piknik i Parken 2026</title>
+<meta name="description" content="Du er invitert som gjest hos Globus på Piknik i Parken, torsdag 11. juni 2026 i Sofienbergparken. Alt du trenger å vite.">
+<meta name="robots" content="noindex, nofollow">
+<!-- Open Graph (oppdater til absolutt URL ved publisering) -->
+<meta property="og:title" content="Globus inviterer til Piknik i Parken 2026">
+<meta property="og:description" content="Torsdag 11. juni 2026 · Sofienbergparken, Oslo. Du er invitert som vår gjest.">
+<meta property="og:image" content="assets/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F3EFE6;--card:#FFFFFF;--ink:#1D1D44;--muted:#6F6E82;--soft:#3a3958;
+    --rubine:#D01B53;--jonquil:#F7CD3B;--mint:#2E8B3F;--green:#1E3D2A;--green2:#2C5A3E;--line:#E1DBCC;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;overflow-x:hidden;}
+  body{font-family:'Poppins','Montserrat',Arial,sans-serif;color:var(--ink);background:var(--paper);
+    line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100%;}
+  img,video{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:780px;width:100%;margin:0 auto;padding:0 20px;}
+  .date{overflow-wrap:anywhere;}
+
+  /* header */
+  header{padding:18px 0 6px;}
+  .hbar{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .hbar .logo{height:26px;width:auto;}
+  .hbar .tag{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+
+  /* hero */
+  .hero{padding:14px 0 6px;}
+  .eyebrow{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+    color:#fff;background:var(--rubine);padding:6px 13px;border-radius:50px;margin-bottom:16px;}
+  h1{font-size:clamp(32px,8vw,52px);line-height:1.04;font-weight:700;letter-spacing:-.02em;}
+  .date{margin-top:10px;font-size:clamp(14px,3.6vw,18px);font-weight:500;color:var(--green2);}
+  .videowrap{position:relative;margin:22px 0 0;border-radius:18px;overflow:hidden;background:#16301F;
+    box-shadow:0 14px 40px rgba(20,30,22,.16);aspect-ratio:16/9;}
+  .videowrap video{width:100%;height:100%;object-fit:cover;}
+  .lead{margin-top:22px;font-size:clamp(15px,4vw,17px);color:var(--soft);}
+  .lead .g{color:var(--rubine);font-weight:600;}
+
+  /* buttons */
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:600;text-decoration:none;
+    padding:14px 22px;border-radius:50px;transition:transform .12s ease, box-shadow .12s ease;}
+  .btn svg{width:18px;height:18px;}
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:var(--rubine);color:#fff;box-shadow:0 6px 18px rgba(208,27,83,.26);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);}
+  .btn-green{background:var(--green);color:#fff;}
+  @media(max-width:520px){.btn{flex:1 1 100%;justify-content:center;}}
+
+  /* sections */
+  section.blk{padding:34px 0 0;}
+  .kicker{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--green2);margin-bottom:16px;}
+  .kicker svg{width:17px;height:17px;color:var(--rubine);}
+
+  /* timeline */
+  .tl{display:flex;flex-direction:column;}
+  .tl .row{display:flex;gap:16px;padding:13px 0;border-top:1px solid var(--line);}
+  .tl .row:first-child{border-top:none;}
+  .tl .time{flex:0 0 78px;font-weight:700;font-size:16px;}
+  .tl .what{font-size:14.5px;color:var(--soft);}
+  .tl .what b{color:var(--ink);font-weight:600;}
+
+  /* perks */
+  .perks{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  @media(max-width:560px){.perks{grid-template-columns:1fr;}}
+  .perk{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;}
+  .perk .pic{width:38px;height:38px;border-radius:11px;background:rgba(46,139,63,.12);
+    display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+  .perk .pic svg{width:20px;height:20px;color:var(--mint);}
+  .perk .pt{font-weight:600;font-size:15px;}
+  .perk .ps{font-size:13px;color:var(--muted);margin-top:5px;}
+
+  /* menu */
+  .menu{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;}
+  .menu .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;}
+  @media(max-width:560px){.menu .grid{grid-template-columns:1fr;}}
+  .menu .item{display:flex;gap:11px;align-items:baseline;font-size:15px;color:var(--soft);}
+  .menu .item .dot{flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:var(--jonquil);position:relative;top:-2px;}
+  .menu .item b{color:var(--ink);font-weight:500;}
+
+  /* program */
+  .acts{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;}
+  @media(max-width:560px){.acts{grid-template-columns:1fr;}}
+  .act{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line);}
+  .act .at{flex:0 0 52px;font-weight:700;font-size:14px;}
+  .act .an{flex:1;font-size:15px;font-weight:500;}
+  .act .head{color:var(--rubine);font-weight:700;}
+  .act .stage{font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--green2);
+    background:rgba(44,90,62,.10);padding:4px 9px;border-radius:50px;}
+  .pnote{font-size:13px;color:var(--muted);margin:-6px 0 14px;}
+  .also{margin-top:14px;font-size:13px;color:var(--soft);border-top:1px solid var(--line);padding-top:14px;}
+  .also b{color:var(--ink);}
+
+  /* band */
+  .band{margin-top:34px;position:relative;border-radius:18px;overflow:hidden;aspect-ratio:21/9;}
+  .band img{width:100%;height:100%;object-fit:cover;object-position:center 44%;}
+  .band .cap{position:absolute;left:20px;bottom:16px;color:#fff;font-weight:600;font-size:clamp(14px,4vw,18px);
+    text-shadow:0 1px 14px rgba(0,0,0,.5);}
+  .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(13,20,14,.6));}
+
+  /* find */
+  .find{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:18px;}
+  @media(max-width:560px){.find{grid-template-columns:1fr;}}
+  .fitem{display:flex;gap:11px;font-size:14px;color:var(--soft);}
+  .fitem svg{width:17px;height:17px;color:var(--rubine);flex:0 0 17px;position:relative;top:2px;}
+  .fitem b{color:var(--ink);font-weight:600;}
+
+  /* waitlist */
+  .wait{margin-top:34px;background:var(--card);border:1.5px solid var(--rubine);border-radius:20px;padding:24px;
+    box-shadow:0 10px 30px rgba(208,27,83,.08);}
+  .wait h3{font-size:18px;color:var(--rubine);margin-bottom:8px;}
+  .wait p{font-size:14.5px;color:var(--soft);}
+  .wait p b{color:var(--ink);}
+  .wait .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+
+  /* contacts */
+  .contacts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;}
+  @media(max-width:560px){.contacts{grid-template-columns:1fr;}}
+  .cc{display:flex;align-items:center;gap:13px;background:var(--green);color:#fff;border-radius:14px;
+    padding:15px 18px;text-decoration:none;}
+  .cc .ico{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.14);
+    display:flex;align-items:center;justify-content:center;}
+  .cc .ico svg{width:18px;height:18px;}
+  .cc .nm{font-size:13px;font-weight:600;}
+  .cc .ph{font-size:15px;opacity:.92;}
+
+  /* footer */
+  footer{margin-top:40px;background:var(--green);color:#fff;}
+  footer .inner{max-width:780px;margin:0 auto;padding:30px 20px;}
+  footer .ft{font-size:17px;font-weight:600;}
+  footer .fs{font-size:12.5px;opacity:.8;margin-top:8px;}
+  footer .frow{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px;
+    border-top:1px solid rgba(255,255,255,.16);padding-top:18px;flex-wrap:wrap;}
+  footer .flogo{height:24px;filter:brightness(0) invert(1);}
+  footer a.pp{color:#fff;font-size:13px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.25);
+    padding:8px 16px;border-radius:50px;}
+</style>
+</head>
+<body>
+
+<header><div class="wrap hbar">
+  <img class="logo" src="assets/globus-logo.svg" alt="Globus">
+  <span class="tag">Piknik i Parken 2026</span>
+</div></header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow">Globus inviterer</span>
+    <h1>Velkommen til<br>Piknik i Parken</h1>
+    <div class="date">Torsdag 11. juni 2026 · Sofienbergparken, Oslo</div>
+
+    <div class="videowrap">
+      <video src="assets/teaser-web.mp4" poster="assets/hero.jpg" controls muted playsinline preload="metadata"></video>
+    </div>
+
+    <p class="lead">
+      En hel kveld sammen i sommersola, med god mat, kald drikke og noe av det beste norsk og internasjonal
+      musikk har å by på. <b>Du er invitert som vår gjest</b> – og alt er ordnet. Bare møt opp, så tar vi oss av resten.
+      <span class="g">Vi gleder oss til å se deg!</span>
+    </p>
+
+    <div class="btns">
+      <a class="btn btn-primary" href="assets/PiP-2026-Globus.ics" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Legg til i kalender
+      </a>
+      <a class="btn btn-ghost" href="https://pipfest.no/program" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        Se hele programmet
+      </a>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Slik blir dagen</div>
+    <div class="tl">
+      <div class="row"><div class="time">15:00</div><div class="what"><b>Vi er på plass ved porten.</b> Vil du komme tidlig og rusle litt rundt? Bare ta kontakt, så møter vi deg.</div></div>
+      <div class="row"><div class="time">16:00</div><div class="what"><b>Vi møtes utenfor hovedporten</b> og deler ut billetter. Her finner du Globus-gjengen.</div></div>
+      <div class="row"><div class="time">17:30</div><div class="what"><b>Felles middag – festivalbuffet med kokk.</b> Vi spiser sammen før kvelden setter inn.</div></div>
+      <div class="row"><div class="time">Kvelden</div><div class="what"><b>Konserter, bar og god stemning.</b> Da er kvelden din – nyt programmet i ditt eget tempo.</div></div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4Z"/></svg> Dette spanderer vi</div>
+    <div class="perks">
+      <div class="perk"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 17v2M13 11v2"/></svg></div><div class="pt">Festivalbillett</div><div class="ps">Inngang til hele torsdagen.</div></div>
+      <div class="perk"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2a2 2 0 0 0 2-2V2"/><path d="M5 11v11"/><path d="M21 15V2a5 5 0 0 0-3 4.5c0 2 .5 3.5 3 4.5"/><path d="M18 11v11"/></svg></div><div class="pt">Festivalbuffet med kokk</div><div class="ps">Felles middag kl. 17:30.</div></div>
+      <div class="perk"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8M7 10h10M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-1-8H8c-.5 4-1 6-1 8a5 5 0 0 0 5 5Z"/></svg></div><div class="pt">2 drikkebonger per person</div><div class="ps">Fritt på alle drikkestands.</div></div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2a2 2 0 0 0 2-2V2"/><path d="M5 11v11"/><path d="M21 15V2a5 5 0 0 0-3 4.5c0 2 .5 3.5 3 4.5"/><path d="M18 11v11"/></svg> På festivalbuffeten</div>
+    <div class="menu"><div class="grid">
+      <div class="item"><span class="dot"></span><span><b>Grillet slider</b> på høyrygg</span></div>
+      <div class="item"><span class="dot"></span><span><b>Chilimarinert kylling</b> med satay</span></div>
+      <div class="item"><span class="dot"></span><span><b>Pulled brisket</b> taco</span></div>
+      <div class="item"><span class="dot"></span><span><b>Laksesashimi</b></span></div>
+      <div class="item"><span class="dot"></span><span><b>Smashed agurksalat</b></span></div>
+      <div class="item"><span class="dot"></span><span><b>Loaded baby baked potatoes</b></span></div>
+    </div></div>
+  </section>
+
+  <section class="blk">
+    <div class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Programmet torsdag</div>
+    <div class="pnote">Et utvalg av høydepunktene. Hele programmet finner du på pipfest.no.</div>
+    <div class="acts">
+      <div class="act"><div class="at">15:00</div><div class="an">Mannskoret</div><div class="stage">Sophie</div></div>
+      <div class="act"><div class="at">15:30</div><div class="an">Charlotte Dos Santos</div><div class="stage">Petrus</div></div>
+      <div class="act"><div class="at">16:30</div><div class="an">Makosir</div><div class="stage">Sophie</div></div>
+      <div class="act"><div class="at">17:30</div><div class="an">Sa_G</div><div class="stage">Petrus</div></div>
+      <div class="act"><div class="at">18:30</div><div class="an head">De La Soul</div><div class="stage">Sophie</div></div>
+      <div class="act"><div class="at">19:30</div><div class="an">SBTRKT <span style="font-weight:400;color:#6F6E82">(DJ)</span></div><div class="stage">Kirka</div></div>
+      <div class="act"><div class="at">20:00</div><div class="an">Tøyen Holding</div><div class="stage">Petrus</div></div>
+      <div class="act"><div class="at">21:30</div><div class="an head">TLC</div><div class="stage">Sophie</div></div>
+    </div>
+    <div class="also"><b>Også på programmet:</b> Ølkurs (17:30) &amp; Vinkurs (18:30) på Byløkka · FAFO og Piiksi DJ-sett på Kirka · Magical Mystery Music Quiz (20:00) · Silent Disco Club (21:15) på Byløkka.</div>
+  </section>
+
+  <section class="blk">
+    <div class="kicker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Slik finner du frem</div>
+    <div class="find">
+      <div class="fitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Møtepunkt kl. 16:00:</b> rett utenfor hovedporten ved Sofienberggata (inngang for Blomsterhagen). Se etter Globus-gjengen.</span></div>
+      <div class="fitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span><b>Scenene:</b> Sophie og Petrus er hovedscenene, Kirka har DJ-settene.</span></div>
+      <div class="fitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8M7 10h10M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-1-8H8c-.5 4-1 6-1 8a5 5 0 0 0 5 5Z"/></svg><span><b>Byløkka:</b> ølkurs, vinkurs, quiz og silent disco.</span></div>
+      <div class="fitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg><span><b>Godt merket:</b> førstehjelp, barer og toaletter finner du lett. Fullt kart: pipfest.no.</span></div>
+    </div>
+    <div class="band"><img src="assets/band.jpg" alt="Piknik i Parken"><div class="cap">Vi sees i Sofienbergparken · torsdag 11. juni</div></div>
+  </section>
+
+  <section class="blk">
+    <div class="wait">
+      <h3>Får du ikke kommet likevel?</h3>
+      <p>Det er <b>lang venteliste</b> til festivalen. Skulle noe dukke opp og du ikke har anledning, gi oss beskjed så tidlig som mulig – da rekker vi å gjøre en annen veldig glad ved å gi plassen din videre.</p>
+      <div class="row">
+        <a class="btn btn-primary" href="sms:+4795086511?&body=Hei,%20jeg%20kan%20dessverre%20ikke%20komme%20p%C3%A5%20Piknik%20i%20Parken.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Send oss en melding
+        </a>
+      </div>
+    </div>
+    <div class="contacts">
+      <a class="cc" href="tel:+4790071773"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span><span><span class="nm">Tor Håkon</span><br><span class="ph">900 71 773</span></span></a>
+      <a class="cc" href="tel:+4795086511"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span><span><span class="nm">Bård Berulfsen</span><br><span class="ph">950 86 511</span></span></a>
+    </div>
+  </section>
+</div>
+
+<footer><div class="inner">
+  <div class="ft">Vi gleder oss til å feire sommeren sammen med deg.</div>
+  <div class="fs">Globus er stolt partner av Piknik i Parken 2026. Visste du? Hele festivalbemanningen planlegges med Globus.</div>
+  <div class="frow">
+    <img class="flogo" src="assets/globus-logo.svg" alt="Globus">
+    <a class="pp" href="https://pipfest.no/program" target="_blank" rel="noopener">pipfest.no/program</a>
+  </div>
+</div></footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Globus//Piknik i Parken 2026//NO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:pip-2026-globus-gjest@globus.ai
+DTSTAMP:20260603T120000Z
+DTSTART:20260611T160000
+DTEND:20260611T233000
+SUMMARY:Piknik i Parken med Globus
+LOCATION:Sofienbergparken (hovedporten\, Sofienberggata)\, Oslo
+DESCRIPTION:Velkommen som gjest hos Globus på Piknik i Parken!\n\nMøtepunkt kl. 16:00 rett utenfor hovedporten ved Sofienberggata. Vil du komme tidligere? Vi er på plass fra kl. 15:00 - ta kontakt.\nFelles middag kl. 17:30 (festivalbuffet med kokk).\nBillett\, mat og 2 drikkebonger er ordnet - bare møt opp.\n\nForhindret fra å komme? Det er lang venteliste - si ifra så fort som mulig\, så kan plassen gå videre til noen andre.\n\nKontakt: Tor Håkon 900 71 773 / Bård 950 86 511\nProgram: pipfest.no/program\n\nVi gleder oss!
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:Piknik i Parken i dag - møt Globus kl. 16:00 ved hovedporten
+END:VALARM
+END:VEVENT
+END:VCALENDAR
